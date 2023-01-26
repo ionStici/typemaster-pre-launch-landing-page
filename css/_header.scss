@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1189px;
+    margin: 0 auto;
+    padding: 23px 24px 64px 24px;
+
+    @media only screen and (min-width: 700px) {
+        padding: 40px 40px 62px 39px;
+        max-width: 1190px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        padding: 55px 40px 83px 40px;
+    }
+}
+
+.btn,
+.btn:link,
+.btn:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #162542;
+
+    border-radius: 8px;
+    background-color: #e8eff2;
+    padding: 11px 14.5px;
+
+    @media only screen and (min-width: 700px) {
+        padding: 16px 27px;
+    }
+}
