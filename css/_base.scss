@@ -1,3 +1,5 @@
+// CSS RESET
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,97 @@
     box-sizing: border-box;
 }
 
+// GENERAL STYLES
+
 body {
     font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
+
+// H1 AND PARAGRAPH
+
+.h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+
+    @media only screen and (max-width: 360px) {
+        font-size: 40px;
+    }
+}
+
+.hero-h1-margin-bottom {
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 700px) {
+        margin-bottom: 34px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin-bottom: 24px;
+    }
+}
+
+.p {
+    line-height: 26px;
+    color: #7b8bad;
+
+    @media only screen and (max-width: 360px) {
+        font-size: 14px;
+    }
+}
+
+.hero-p-margin-bottom {
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 700px) {
+        margin-bottom: 39px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+// BUTTON
+
+.btn,
+.btn:link,
+.btn:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 26px;
+
+    display: inline-block;
+    border-radius: 8px;
+    padding: 11px 14.5px;
+
+    @media only screen and (min-width: 700px) {
+        padding: 16px 27px;
+    }
+
+    @media only screen and (max-width: 360px) {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+.btn--gray,
+.btn--gray:link,
+.btn--gray:visited {
+    background-color: #e8eff2;
+    color: #162542;
+}
+
+.btn--orange,
+.btn--orange:link,
+.btn--orange:visited {
+    background-color: #f16718;
+    color: #ffffff;
+}
+
+// END

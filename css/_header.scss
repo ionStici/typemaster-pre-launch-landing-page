@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1189px;
+
+    max-width: 600px;
     margin: 0 auto;
     padding: 23px 24px 64px 24px;
 
@@ -16,21 +17,9 @@
     }
 }
 
-.btn,
-.btn:link,
-.btn:hover {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    color: #162542;
-
-    border-radius: 8px;
-    background-color: #e8eff2;
-    padding: 11px 14.5px;
-
-    @media only screen and (min-width: 700px) {
-        padding: 16px 27px;
+.logo {
+    @media only screen and (max-width: 360px) {
+        width: 36px;
+        height: 36px;
     }
 }
