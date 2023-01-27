@@ -256,4 +256,93 @@ body {
   border-radius: 20px;
 }
 
+.hero-section-margin-bottom {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 700px) {
+  .hero-section-margin-bottom {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-section-margin-bottom {
+    margin-bottom: 30px;
+  }
+}
+
+.gallery {
+  padding: 0 24px;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 700px) {
+  .gallery {
+    padding: 0 40px 0 39px;
+  }
+}
+.gallery__imgs-box {
+  margin-bottom: 75px;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: 0.3696fr 0.6303fr;
+  max-width: 550px;
+  height: 193px;
+  margin-left: -46px;
+}
+@media only screen and (min-width: 424px) {
+  .gallery__imgs-box {
+    margin: 0 auto 75px auto;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .gallery__imgs-box {
+    max-width: 888px;
+    height: 320px;
+    margin-bottom: 72px;
+    column-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__imgs-box {
+    margin-bottom: 0;
+  }
+}
+.gallery__img {
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.gallery__img--1 {
+  background-image: url(./../assets/mobile/image-phone-and-keyboard.jpg);
+}
+@media only screen and (min-width: 700px) {
+  .gallery__img--1 {
+    background-image: url(./../assets/tablet/image-phone-and-keyboard.jpg);
+  }
+}
+.gallery__img--2 {
+  background-image: url(./../assets/mobile/image-glass-and-keyboard.jpg);
+}
+@media only screen and (min-width: 700px) {
+  .gallery__img--2 {
+    background-image: url(./../assets/tablet/image-glass-and-keyboard.jpg);
+  }
+}
+.gallery__content-box {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 550px;
+}
+.gallery__content-box p {
+  padding: 0 10px;
+}
+.h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #162542;
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
