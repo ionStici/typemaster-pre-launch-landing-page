@@ -1,0 +1,20 @@
+.footer {
+    text-align: center;
+    padding-bottom: 50px;
+
+    @media only screen and (min-width: 700px) {
+        padding-bottom: 43px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        padding-bottom: 39px;
+    }
+
+    p {
+        color: #7b8bad;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}

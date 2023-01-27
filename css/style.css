@@ -462,4 +462,25 @@ body {
   }
 }
 
+.footer {
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 700px) {
+  .footer {
+    padding-bottom: 43px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 39px;
+  }
+}
+.footer p {
+  color: #7b8bad;
+}
+.footer span {
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
