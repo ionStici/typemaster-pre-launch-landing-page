@@ -27,6 +27,12 @@ body {
     font-size: 40px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
 
 .hero-h1-margin-bottom {
   margin-bottom: 32px;
@@ -89,7 +95,7 @@ body {
   .btn:link,
   .btn:hover {
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -118,11 +124,12 @@ body {
 @media only screen and (min-width: 700px) {
   .header {
     padding: 40px 40px 62px 39px;
-    max-width: 1190px;
+    max-width: 967px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .header {
+    max-width: 1190px;
     padding: 55px 40px 83px 40px;
   }
 }
@@ -146,6 +153,19 @@ body {
     margin: 0 auto;
   }
 }
+@media only screen and (min-width: 700px) {
+  .hero {
+    padding: 0 40px 0 39px;
+    flex-direction: row;
+    align-items: center;
+    max-width: revert;
+  }
+}
+@media only screen and (min-width: 966px) {
+  .hero {
+    justify-content: center;
+  }
+}
 .hero__content-box {
   margin-bottom: 64px;
 }
@@ -159,6 +179,24 @@ body {
 @media only screen and (min-width: 595px) {
   .hero__content-box p {
     max-width: 550px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero__content-box p {
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .hero__content-box {
+    width: 340px;
+    flex-shrink: 0;
+    margin-right: 69px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero__content-box {
+    width: 445px;
   }
 }
 .hero__release {
@@ -186,12 +224,31 @@ body {
 }
 .hero__img-box {
   width: 375px;
+  position: relative;
 }
 @media only screen and (min-width: 424px) {
   .hero__img-box {
     width: revert;
     max-width: 550px;
   }
+}
+@media only screen and (min-width: 700px) {
+  .hero__img-box {
+    max-width: revert;
+    width: 478px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero__img-box {
+    width: 540px;
+    height: 480px;
+  }
+}
+.hero__img-box::before {
+  content: url(./../assets/shared/pattern-square.svg);
+  position: absolute;
+  right: -285px;
 }
 .hero__img {
   display: inline-block;

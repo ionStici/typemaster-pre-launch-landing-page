@@ -9,6 +9,18 @@
         margin: 0 auto;
     }
 
+    @media only screen and (min-width: 700px) {
+        padding: 0 40px 0 39px;
+        flex-direction: row;
+
+        align-items: center;
+        max-width: revert;
+    }
+
+    @media only screen and (min-width: 966px) {
+        justify-content: center;
+    }
+
     &__content-box {
         margin-bottom: 64px;
 
@@ -23,6 +35,21 @@
             @media only screen and (min-width: 595px) {
                 max-width: 550px;
             }
+
+            @media only screen and (min-width: 1200px) {
+                padding-right: 50px;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            width: 340px;
+            flex-shrink: 0;
+            margin-right: 69px;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 445px;
         }
     }
 
@@ -49,10 +76,28 @@
 
     &__img-box {
         width: 375px;
+        position: relative;
 
         @media only screen and (min-width: 424px) {
             width: revert;
             max-width: 550px;
+        }
+
+        @media only screen and (min-width: 700px) {
+            max-width: revert;
+            width: 478px;
+            flex-shrink: 0;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 540px;
+            height: 480px;
+        }
+
+        &::before {
+            content: url(./../assets/shared/pattern-square.svg);
+            position: absolute;
+            right: -285px;
         }
     }
 
