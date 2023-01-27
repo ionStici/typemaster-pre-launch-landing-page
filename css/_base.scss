@@ -17,41 +17,18 @@ body {
     font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 26px;
 }
 
-// H1 AND PARAGRAPH
+// PARAGRAPH
 
-.h1 {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 48px;
-    text-transform: uppercase;
-    color: #162542;
-
-    @media only screen and (max-width: 360px) {
-        font-size: 40px;
-    }
-
+.main {
     @media only screen and (min-width: 1200px) {
-        font-size: 56px;
-        line-height: 56px;
-    }
-}
-
-.hero-h1-margin-bottom {
-    margin-bottom: 32px;
-
-    @media only screen and (min-width: 700px) {
-        margin-bottom: 34px;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        margin-bottom: 24px;
+        overflow-x: hidden;
     }
 }
 
 .p {
-    line-height: 26px;
     color: #7b8bad;
 
     @media only screen and (max-width: 360px) {
@@ -79,7 +56,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 26px;
 
     display: inline-block;
     border-radius: 8px;

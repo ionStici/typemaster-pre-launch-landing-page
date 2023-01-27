@@ -5,6 +5,7 @@
     overflow-x: hidden;
 
     @media only screen and (min-width: 600px) {
+        overflow-x: revert;
         max-width: 600px;
         margin: 0 auto;
     }
@@ -50,6 +51,7 @@
 
         @media only screen and (min-width: 1200px) {
             width: 445px;
+            margin-right: 125px;
         }
     }
 
@@ -104,6 +106,7 @@
     &__img {
         display: inline-block;
         width: 100%;
+
         border-radius: 20px;
     }
 }
@@ -117,5 +120,34 @@
 
     @media only screen and (min-width: 1200px) {
         margin-bottom: 30px;
+    }
+}
+
+.h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+
+    @media only screen and (max-width: 360px) {
+        font-size: 40px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+.hero-h1-margin-bottom {
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 700px) {
+        margin-bottom: 34px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin-bottom: 24px;
     }
 }

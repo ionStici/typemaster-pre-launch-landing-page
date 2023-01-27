@@ -13,43 +13,16 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 26px;
 }
 
-.h1 {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 48px;
-  text-transform: uppercase;
-  color: #162542;
-}
-@media only screen and (max-width: 360px) {
-  .h1 {
-    font-size: 40px;
-  }
-}
 @media only screen and (min-width: 1200px) {
-  .h1 {
-    font-size: 56px;
-    line-height: 56px;
-  }
-}
-
-.hero-h1-margin-bottom {
-  margin-bottom: 32px;
-}
-@media only screen and (min-width: 700px) {
-  .hero-h1-margin-bottom {
-    margin-bottom: 34px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-h1-margin-bottom {
-    margin-bottom: 24px;
+  .main {
+    overflow-x: hidden;
   }
 }
 
 .p {
-  line-height: 26px;
   color: #7b8bad;
 }
 @media only screen and (max-width: 360px) {
@@ -78,7 +51,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 26px;
   display: inline-block;
   border-radius: 8px;
   padding: 11px 14.5px;
@@ -149,6 +121,7 @@ body {
 }
 @media only screen and (min-width: 600px) {
   .hero {
+    overflow-x: revert;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -197,6 +170,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .hero__content-box {
     width: 445px;
+    margin-right: 125px;
   }
 }
 .hero__release {
@@ -270,6 +244,39 @@ body {
   }
 }
 
+.h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #162542;
+}
+@media only screen and (max-width: 360px) {
+  .h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+.hero-h1-margin-bottom {
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 700px) {
+  .hero-h1-margin-bottom {
+    margin-bottom: 34px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-h1-margin-bottom {
+    margin-bottom: 24px;
+  }
+}
+
 .gallery {
   padding: 0 24px;
   overflow-x: hidden;
@@ -277,9 +284,19 @@ body {
 @media only screen and (min-width: 700px) {
   .gallery {
     padding: 0 40px 0 39px;
+    overflow-x: revert;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery {
+    max-width: 1189px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
 }
 .gallery__imgs-box {
+  position: relative;
   margin-bottom: 75px;
   display: grid;
   column-gap: 24px;
@@ -299,11 +316,24 @@ body {
     height: 320px;
     margin-bottom: 72px;
     column-gap: 30px;
+    grid-template-columns: 0.3247fr 0.6752fr;
   }
 }
 @media only screen and (min-width: 1200px) {
   .gallery__imgs-box {
-    margin-bottom: 0;
+    max-width: revert;
+    width: 730px;
+    height: 480px;
+    margin: 0;
+    grid-template-columns: 0.3642fr 0.6357fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__imgs-box::before {
+    content: url(./../assets/shared/pattern-square.svg);
+    position: absolute;
+    bottom: -7px;
+    left: -285px;
   }
 }
 .gallery__img {
@@ -319,6 +349,11 @@ body {
     background-image: url(./../assets/tablet/image-phone-and-keyboard.jpg);
   }
 }
+@media only screen and (min-width: 1200px) {
+  .gallery__img--1 {
+    background-image: url(./../assets/desktop/image-phone-and-keyboard.jpg);
+  }
+}
 .gallery__img--2 {
   background-image: url(./../assets/mobile/image-glass-and-keyboard.jpg);
 }
@@ -327,14 +362,58 @@ body {
     background-image: url(./../assets/tablet/image-glass-and-keyboard.jpg);
   }
 }
+@media only screen and (min-width: 1200px) {
+  .gallery__img--2 {
+    background-image: url(./../assets/desktop/image-glass-and-keyboard.jpg);
+  }
+}
 .gallery__content-box {
   text-align: center;
   margin: 0 auto;
   max-width: 550px;
 }
+@media only screen and (min-width: 700px) {
+  .gallery__content-box {
+    max-width: 888px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__content-box {
+    max-width: revert;
+    width: 310px;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .gallery__content-box {
+    width: 255px;
+  }
+}
 .gallery__content-box p {
   padding: 0 10px;
 }
+@media only screen and (min-width: 700px) {
+  .gallery__content-box p {
+    padding: 0;
+    width: 398px;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 888px) {
+  .gallery__content-box p {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__content-box p {
+    width: 100%;
+  }
+}
+
 .h2 {
   font-weight: 900;
   font-size: 32px;
@@ -343,6 +422,33 @@ body {
   color: #162542;
   margin-bottom: 24px;
   padding: 0 10px;
+}
+@media only screen and (min-width: 700px) {
+  .h2 {
+    margin-bottom: 0;
+    padding: 0;
+    width: 220px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .h2 {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+
+.gallery-section-margin-bottom {
+  margin-bottom: 111px;
+}
+@media only screen and (min-width: 700px) {
+  .gallery-section-margin-bottom {
+    margin-bottom: 142px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery-section-margin-bottom {
+    margin-bottom: 168px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
